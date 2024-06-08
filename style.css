@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -246,7 +247,9 @@ html, body {
 
 .gallery-image:hover {
   transform: scale(1.05);
-}.button-container {
+}
+
+.button-container {
   text-align: center;
 }
 
@@ -273,6 +276,7 @@ html, body {
   background-color: #e65c54;
   transform: scale(1.05);
 }
+
 .special {
   background-color: #868677;
 }
@@ -281,14 +285,43 @@ html, body {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 20px; /* Tạo khoảng trống dưới để hiển thị scrollbar */
+  padding-bottom: 20px;
+  /* Tạo khoảng trống dưới để hiển thị scrollbar */
 }
 
-.album-slide > div {
+.album-slide>div {
   flex: 0 0 auto;
   margin-right: 20px;
-  margin-bottom: 20px; /* Tạo khoảng trống dưới cho các ảnh */
+  margin-bottom: 20px;
+  /* Tạo khoảng trống dưới cho các ảnh */
   scroll-snap-align: start;
 }
 
+.styled-text {
+  font-family: 'Monaco', monospace;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
+.styled-text .heart-icon {
+  font-size: 32px;
+  color: red;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

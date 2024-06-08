@@ -84,3 +84,10 @@ const currentYear = currentDate.getFullYear();
 
 // Generate calendar for current month
 generateCalendar(currentMonth, currentYear);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('img');
+    images.forEach(function(img) {
+        img.setAttribute('loading', 'lazy');
+    });
+});
