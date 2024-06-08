@@ -324,4 +324,24 @@ body {
   100% {
     transform: scale(1);
   }
+}/* Chọn thanh cuộn trên các trình duyệt dựa trên độ dày */
+::-webkit-scrollbar {
+  width: 10px; /* Độ dày của thanh cuộn ngang */
+  height: 10px; /* Độ dày của thanh cuộn dọc */
+}
+
+/* Định dạng của thanh cuộn */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của thanh cuộn */
+}
+
+/* Định dạng của thanh cuộn khi không di chuột qua */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Màu nền của thanh cuộn */
+  border-radius: 5px; /* Bo tròn các góc của thanh cuộn */
+}
+
+/* Định dạng của thanh cuộn khi di chuột qua */
+::-webkit-scrollbar-thumb:hover {
+  background: #af1b1b; /* Màu nền của thanh cuộn khi di chuột qua */
 }
