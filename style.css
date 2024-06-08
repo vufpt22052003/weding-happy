@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'monica-ext-font_YIBBBFG';
   src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Light.otf');
@@ -134,7 +138,7 @@
 }
 
 .calendar-container {
-  width: 330px;
+  width: 355px;
   border: 1px solid #ccc;
   border-radius: 16px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
