@@ -273,3 +273,22 @@ html, body {
   background-color: #e65c54;
   transform: scale(1.05);
 }
+.special {
+  background-color: #868677;
+}
+
+.album-slide {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px; /* Tạo khoảng trống dưới để hiển thị scrollbar */
+}
+
+.album-slide > div {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  margin-bottom: 20px; /* Tạo khoảng trống dưới cho các ảnh */
+  scroll-snap-align: start;
+}
+
+
